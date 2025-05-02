@@ -1,0 +1,412 @@
+<!doctype html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://jichangv2ray.github.io/news/article-107715.htm" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shadowrocket完全配置指南：iOS上科学上网的终极利器</title>
+        <meta name="description" content="在iOS设备上寻找一款功能强大、安全可靠的科学上网工具，Shadowrocket无疑是绕不开的名字。它不仅支持多种主流代理协议，如Shadowsocks、Vmess、Trojan等，还能进行深度规则管" />
+        <link rel="icon" href="/assets/website/img/clashxw/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="V2ray机场节点 中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jichangv2ray.github.io/news/article-107715.htm" />
+    <meta property="og:site_name" content="V2ray机场节点 中文网" />
+    <meta property="og:title" content="Shadowrocket完全配置指南：iOS上科学上网的终极利器" />
+    <meta property="og:image" content="https://jichangv2ray.github.io/uploads/20241223/17210eac006a123c1fac3904232cdc97.webp" />
+        <meta property="og:release_date" content="2025-04-30T09:32:55" />
+    <meta property="og:updated_time" content="2025-04-30T09:32:55" />
+        <meta property="og:description" content="在iOS设备上寻找一款功能强大、安全可靠的科学上网工具，Shadowrocket无疑是绕不开的名字。它不仅支持多种主流代理协议，如Shadowsocks、Vmess、Trojan等，还能进行深度规则管" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Shadowrocket完全配置指南：iOS上科学上网的终极利器">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- all css here -->
+    <link rel="stylesheet" href="/assets/website/css/clashxw/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxw/icons.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxw/plugins.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxw/style.css">
+    <link rel="stylesheet" href="/assets/website/css/clashxw/responsive.css">
+    <script src="/assets/website/js/frontend/clashxw/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V1SL467NXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V1SL467NXZ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- header start -->
+    <header class="header-area transparent-bar header-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-5 col-sm-4">
+                    <div class="logo">
+                        <a href="/">
+                                                        <span>V2ray机场节点</span>
+                                                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-7 col-sm-8">
+                    <div class="menu-search-bundle">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                                                        <li><a href="/">首页</a></li>
+                                                                        <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                        <li><a href="/news/">新闻资讯</a></li>
+                                                                        <li><a href="/client.htm">客户端</a></li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-area d-md-block d-block col-md-12 col-lg-12 col-12 d-lg-none d-xl-none">
+                    <div class="mobile-menu">
+                        <nav id="mobile-menu-active">
+                            <ul class="menu-overflow">
+                                                                <li><a href="/">首页</a></li>
+                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                <li><a href="#">关于</a></li>
+                                <li><a href="#">联系</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumb-area bg-img ptb-80" style="background-image:url(/assets/website/img/clashxw/banner/breath.jpg);">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <h1>Shadowrocket完全配置指南：iOS上科学上网的终极利器</h1>
+                <ul>
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="/news/">新闻资讯</a>
+                    </li>
+                    <li class="active">正文</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about-area ptb-95">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="36" data-end="240" class="">在iOS设备上寻找一款功能强大、安全可靠的科学上网工具，<strong data-start="64" data-end="80">Shadowrocket</strong>无疑是绕不开的名字。它不仅支持多种主流代理协议，如Shadowsocks、Vmess、Trojan等，还能进行深度规则管理与流量统计，堪称“网络自由的瑞士军刀”。如果你刚接触这款工具或尚未完全掌握它的使用技巧，那么这篇文章将为你提供一套<strong data-start="198" data-end="214">完整详实的配置与使用指南</strong>，帮助你从入门到精通，一步步打造属于自己的自由通道。</p>
+<hr data-start="242" data-end="245" class="" style="">
+<h2 data-start="247" data-end="268" class="">一、什么是Shadowrocket？</h2>
+<p data-start="270" data-end="370" class="">Shadowrocket 是一款专为 iOS 平台开发的网络代理工具。它的本质是一个规则驱动的代理客户端，允许用户设置不同的代理节点和访问策略，从而实现绕过地理封锁、访问国际内容、提高网络安全的目的。</p>
+<p data-start="372" data-end="472" class="">相比一般的VPN工具，Shadowrocket 不仅支持<strong data-start="400" data-end="407">多协议</strong>、<strong data-start="408" data-end="420">高自由度规则管理</strong>，还提供了强大的<strong data-start="428" data-end="437">DNS配置</strong>、<strong data-start="438" data-end="446">流量监控</strong>、<strong data-start="447" data-end="456">URL拦截</strong>等功能，堪称专业用户的首选工具。</p>
+<hr data-start="474" data-end="477" class="" style="">
+<h2 data-start="479" data-end="502" class="">二、Shadowrocket核心功能解析</h2>
+<p data-start="504" data-end="545" class="">Shadowrocket 的强大之处体现在它的细节控制能力和多维度的网络管理功能：</p>
+<h3 data-start="547" data-end="563" class="">1. <strong data-start="554" data-end="563">多协议支持</strong></h3>
+<ul data-start="564" data-end="643">
+<li data-start="564" data-end="585" class="" style="">
+<p data-start="566" data-end="585" class="">支持 Shadowsocks (SS)</p>
+</li>
+<li data-start="586" data-end="611" class="" style="">
+<p data-start="588" data-end="611" class="">支持 Vmess、VLESS（V2Ray协议）</p>
+</li>
+<li data-start="612" data-end="643" class="" style="">
+<p data-start="614" data-end="643" class="">支持 Trojan、HTTP、HTTPS、SOCKS5 等</p>
+</li>
+</ul>
+<p data-start="645" data-end="676" class="">用户可以自由切换协议以应对不同网络环境，确保连接稳定与隐匿性。</p>
+<h3 data-start="678" data-end="693" class="">2. <strong data-start="685" data-end="693">规则分流</strong></h3>
+<ul data-start="694" data-end="763">
+<li data-start="694" data-end="728" class="" style="">
+<p data-start="696" data-end="728" class="">自带规则管理：可以选择“全局”、“绕过中国”、“广告屏蔽”等模式</p>
+</li>
+<li data-start="729" data-end="763" class="" style="">
+<p data-start="731" data-end="763" class="">支持导入 Clash 规则、Surge 格式规则、用户自定义规则</p>
+</li>
+</ul>
+<p data-start="765" data-end="798" class="">你可以控制哪些流量走代理、哪些直连，有效提高网络速度与资源利用率。</p>
+<h3 data-start="800" data-end="815" class="">3. <strong data-start="807" data-end="815">流量监控</strong></h3>
+<ul data-start="816" data-end="854">
+<li data-start="816" data-end="829" class="" style="">
+<p data-start="818" data-end="829" class="">实时查看上传/下载速率</p>
+</li>
+<li data-start="830" data-end="854" class="" style="">
+<p data-start="832" data-end="854" class="">累计流量统计（便于管理流量套餐或VPS资源）</p>
+</li>
+</ul>
+<h3 data-start="856" data-end="872" class="">4. <strong data-start="863" data-end="872">DNS配置</strong></h3>
+<ul data-start="873" data-end="972">
+<li data-start="873" data-end="904" class="" style="">
+<p data-start="875" data-end="904" class="">支持自定义DNS服务器（如8.8.8.8、1.1.1.1）</p>
+</li>
+<li data-start="905" data-end="951" class="" style="">
+<p data-start="907" data-end="951" class="">支持 DoH（DNS over HTTPS）、DoT（DNS over TLS）加密解析</p>
+</li>
+<li data-start="952" data-end="972" class="" style="">
+<p data-start="954" data-end="972" class="">可以防止DNS污染，提升域名解析速度</p>
+</li>
+</ul>
+<h3 data-start="974" data-end="990" class="">5. <strong data-start="981" data-end="990">安全性功能</strong></h3>
+<ul data-start="991" data-end="1024">
+<li data-start="991" data-end="1002" class="" style="">
+<p data-start="993" data-end="1002" class="">URL拦截与重定向</p>
+</li>
+<li data-start="1003" data-end="1012" class="" style="">
+<p data-start="1005" data-end="1012" class="">TLS证书验证</p>
+</li>
+<li data-start="1013" data-end="1024" class="" style="">
+<p data-start="1015" data-end="1024" class="">本地日志记录与导出</p>
+</li>
+</ul>
+<hr data-start="1026" data-end="1029" class="" style="">
+<h2 data-start="1031" data-end="1052" class="">三、Shadowrocket安装指南</h2>
+<blockquote data-start="1054" data-end="1153">
+<p data-start="1056" data-end="1153" class="">请注意，Shadowrocket 是一款 <strong data-start="1077" data-end="1085">付费应用</strong>，目前<strong data-start="1088" data-end="1116">仅在中国大陆以外地区的 App Store 可用</strong>。你需要准备一个美区、港区、日区等非大陆 Apple ID 才能完成购买。</p>
+</blockquote>
+<h3 data-start="1155" data-end="1166" class="">安装步骤如下：</h3>
+<ol data-start="1168" data-end="1299">
+<li data-start="1168" data-end="1196" class="" style="">
+<p data-start="1171" data-end="1196" class=""><strong data-start="1171" data-end="1186">切换 Apple ID</strong> 至非大陆地区账号；</p>
+</li>
+<li data-start="1197" data-end="1230" class="" style="">
+<p data-start="1200" data-end="1230" class="">打开 App Store，搜索“Shadowrocket”；</p>
+</li>
+<li data-start="1231" data-end="1264" class="" style="">
+<p data-start="1234" data-end="1264" class="">购买并下载安装（约人民币30元左右，实际以汇率和地区为准）；</p>
+</li>
+<li data-start="1265" data-end="1299" class="" style="">
+<p data-start="1268" data-end="1299" class="">安装完成后，打开应用，首次会请求访问VPN配置，点击“允许”。</p>
+</li>
+</ol>
+<hr data-start="1301" data-end="1304" class="" style="">
+<h2 data-start="1306" data-end="1329" class="">四、Shadowrocket配置详细步骤</h2>
+<h3 data-start="1331" data-end="1345" class="">步骤一：添加代理节点</h3>
+<ol data-start="1347" data-end="1557">
+<li data-start="1347" data-end="1378" class="" style="">
+<p data-start="1350" data-end="1378" class="">打开 Shadowrocket，点击右上角的“+”按钮；</p>
+</li>
+<li data-start="1379" data-end="1416" class="" style="">
+<p data-start="1382" data-end="1416" class="">选择代理类型（Shadowsocks/Vmess/Trojan等）；</p>
+</li>
+<li data-start="1417" data-end="1557" class="" style="">
+<p data-start="1420" data-end="1445" class="">填写以下信息（以 Shadowsocks 为例）：</p>
+<ul data-start="1449" data-end="1557">
+<li data-start="1449" data-end="1463" class="" style="">
+<p data-start="1451" data-end="1463" class="">地址（服务器IP或域名）</p>
+</li>
+<li data-start="1467" data-end="1487" class="" style="">
+<p data-start="1469" data-end="1487" class="">端口（一般为 8388 或指定端口）</p>
+</li>
+<li data-start="1491" data-end="1521" class="" style="">
+<p data-start="1493" data-end="1521" class="">加密方式（如 aes-256-gcm、chacha20）</p>
+</li>
+<li data-start="1525" data-end="1540" class="" style="">
+<p data-start="1527" data-end="1540" class="">密码（VPS配置中的密码）</p>
+</li>
+<li data-start="1544" data-end="1557" class="" style="">
+<p data-start="1546" data-end="1557" class="">备注（可选，方便识别）</p>
+</li>
+</ul>
+</li>
+</ol>
+<p data-start="1559" data-end="1574" class="">填写完成后，点击“完成”保存。</p>
+<hr data-start="1576" data-end="1579" class="" style="">
+<h3 data-start="1581" data-end="1595" class="">步骤二：设置分流规则</h3>
+<ol data-start="1597" data-end="1718">
+<li data-start="1597" data-end="1620" class="" style="">
+<p data-start="1600" data-end="1620" class="">返回主界面，点击“配置” → “规则”；</p>
+</li>
+<li data-start="1621" data-end="1718" class="" style="">
+<p data-start="1624" data-end="1633" class="">选择以下模式之一：</p>
+<ul data-start="1637" data-end="1718">
+<li data-start="1637" data-end="1656" class="" style="">
+<p data-start="1639" data-end="1656" class=""><strong data-start="1639" data-end="1647">全局代理</strong>：所有流量都走代理</p>
+</li>
+<li data-start="1660" data-end="1689" class="" style="">
+<p data-start="1662" data-end="1689" class=""><strong data-start="1662" data-end="1670">绕过中国</strong>：境内网站直连，境外网站走代理（推荐）</p>
+</li>
+<li data-start="1693" data-end="1718" class="" style="">
+<p data-start="1695" data-end="1718" class=""><strong data-start="1695" data-end="1704">自定义规则</strong>：适合进阶用户精细化管理流量</p>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote data-start="1720" data-end="1769">
+<p data-start="1722" data-end="1769" class="">提示：你可以导入 Surge/Clash/Quantumult 的规则配置文件，实现自动分流。</p>
+</blockquote>
+<hr data-start="1771" data-end="1774" class="" style="">
+<h3 data-start="1776" data-end="1790" class="">步骤三：启动代理连接</h3>
+<ol data-start="1792" data-end="1872">
+<li data-start="1792" data-end="1816" class="" style="">
+<p data-start="1795" data-end="1816" class="">回到主界面，确保你已选择好代理节点和规则；</p>
+</li>
+<li data-start="1817" data-end="1846" class="" style="">
+<p data-start="1820" data-end="1846" class="">点击右上角的“开关”按钮，首次会提示添加VPN配置；</p>
+</li>
+<li data-start="1847" data-end="1872" class="" style="">
+<p data-start="1850" data-end="1872" class="">确认后自动连接，状态为“连接中”即代表成功。</p>
+</li>
+</ol>
+<p data-start="1874" data-end="1929" class="">此时你可以打开 Safari 或其他浏览器访问如 YouTube、Google 等国外站点，测试代理是否生效。</p>
+<hr data-start="1931" data-end="1934" class="" style="">
+<h2 data-start="1936" data-end="1950" class="">五、进阶技巧与设置优化</h2>
+<h3 data-start="1952" data-end="1976" class="">1. <strong data-start="1959" data-end="1976">添加多个节点 &amp; 分组管理</strong></h3>
+<p data-start="1977" data-end="2005" class="">支持同时添加多个代理服务器，可在不同网络环境中快速切换。</p>
+<h3 data-start="2007" data-end="2022" class="">2. <strong data-start="2014" data-end="2022">节点测速</strong></h3>
+<p data-start="2023" data-end="2049" class="">长按某个节点 → 点击“测速”，选择最快的节点使用。</p>
+<h3 data-start="2051" data-end="2074" class="">3. <strong data-start="2058" data-end="2074">订阅管理（推荐进阶用户）</strong></h3>
+<ul data-start="2075" data-end="2133">
+<li data-start="2075" data-end="2101" class="" style="">
+<p data-start="2077" data-end="2101" class="">支持URL订阅（格式同 Clash/Surge）</p>
+</li>
+<li data-start="2102" data-end="2117" class="" style="">
+<p data-start="2104" data-end="2117" class="">节点自动更新、免去手动配置</p>
+</li>
+<li data-start="2118" data-end="2133" class="" style="">
+<p data-start="2120" data-end="2133" class="">可批量管理、启用/禁用节点</p>
+</li>
+</ul>
+<h3 data-start="2135" data-end="2152" class="">4. <strong data-start="2142" data-end="2152">测速与延迟图</strong></h3>
+<p data-start="2153" data-end="2179" class="">查看不同节点的延迟变化趋势，便于长期使用时对比判断。</p>
+<hr data-start="2181" data-end="2184" class="" style="">
+<h2 data-start="2186" data-end="2202" class="">六、常见问题解答（FAQ）</h2>
+<h3 data-start="2204" data-end="2231" class="">Q1：Shadowrocket 支持哪些协议？</h3>
+<p data-start="2233" data-end="2305" class="">支持 Shadowsocks、Vmess/VLESS、Trojan、SOCKS5、HTTP、HTTPS 等多种协议。满足绝大多数科学上网的需求。</p>
+<h3 data-start="2307" data-end="2322" class="">Q2：连接失败怎么办？</h3>
+<ul data-start="2324" data-end="2403">
+<li data-start="2324" data-end="2341" class="" style="">
+<p data-start="2326" data-end="2341" class="">检查服务器是否宕机或IP被封；</p>
+</li>
+<li data-start="2342" data-end="2361" class="" style="">
+<p data-start="2344" data-end="2361" class="">检查端口是否开放、防火墙是否拦截；</p>
+</li>
+<li data-start="2362" data-end="2384" class="" style="">
+<p data-start="2364" data-end="2384" class="">尝试更换协议或开启 TLS/WS 封装；</p>
+</li>
+<li data-start="2385" data-end="2403" class="" style="">
+<p data-start="2387" data-end="2403" class="">使用海外 DNS 防止解析错误。</p>
+</li>
+</ul>
+<h3 data-start="2405" data-end="2430" class="">Q3：如何更新 Shadowrocket？</h3>
+<p data-start="2432" data-end="2484" class="">在 App Store → 账户 → 可用更新中检查是否有新版本。建议及时更新以获得最佳体验和漏洞修复。</p>
+<h3 data-start="2486" data-end="2511" class="">Q4：Shadowrocket 是否安全？</h3>
+<p data-start="2513" data-end="2598" class="">只要你使用 <strong data-start="2519" data-end="2537">自己搭建或可信赖的代理服务器</strong>，Shadowrocket 本身是非常安全的。它不会记录你的浏览数据，且支持加密DNS和TLS连接，能够有效保护用户隐私。</p>
+<h3 data-start="2600" data-end="2625" class="">Q5：Shadowrocket 有费用吗？</h3>
+<p data-start="2627" data-end="2659" class="">是的，它是一款付费工具，一次性购买后可永久使用，不存在订阅费用。</p>
+<hr data-start="2661" data-end="2664" class="" style="">
+<h2 data-start="2666" data-end="2690" class="">七、总结：Shadowrocket适合谁？</h2>
+<p data-start="2692" data-end="2782" class="">如果你是一名 iOS 用户，追求<strong data-start="2708" data-end="2720">自由访问国际网络</strong>，希望对网络行为有<strong data-start="2729" data-end="2738">高度可控权</strong>，不满足于市面上的“一键式VPN工具”，那么 Shadowrocket 是你的不二之选。</p>
+<p data-start="2784" data-end="2846" class="">它不仅功能齐全，而且在稳定性、可定制性、安全性上都走在前列。无论你是初学者还是进阶用户，都能通过它获得顺畅、安全的上网体验。</p>
+<hr data-start="2848" data-end="2851" class="">
+<h3 data-start="2853" data-end="2862" class="">精彩点评：</h3>
+<p data-start="2864" data-end="3060" class="">这篇《Shadowrocket完全配置指南》以极其清晰、系统的方式，将一款专业级代理工具的使用流程从头到尾剖析开来。它不仅满足了初学者“如何用”的实操需求，也为进阶用户提供了进一层“如何优化”的技巧与建议。更难得的是，文章没有陷入技术术语堆砌的陷阱，而是用通俗、实用、引导性强的语言，让每一位读者都能找到自己上手的入口。可以说，这不只是一次工具讲解，更是一场关于网络自由与安全意识的普及教育。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-107709.htm">99每年科学上网软件：最佳选择与使用指南</a></p>
+                                        <p>下一个：<a href="/news/article-108553.htm">《clash卡牌游戏深度解析：策略、技巧与常见问题全攻略》</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-109398.htm" title="科学上网：全面了解如何安全突破网络限制">科学上网：全面了解如何安全突破网络限制</a></li>
+                        <li class="py-2"><a href="/news/article-96855.htm" title="穿越网络藩篱的利器：DogeCloud V2Ray全方位使用与配置终极指南">穿越网络藩篱的利器：DogeCloud V2Ray全方位使用与配置终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-100572.htm" title="解决Brackets与V2Ray冲突的全面指南：优化网络与开发体验">解决Brackets与V2Ray冲突的全面指南：优化网络与开发体验</a></li>
+                        <li class="py-2"><a href="/news/article-106946.htm" title="全面解读：Vmess运营商的角色、选择策略与科学上网的未来">全面解读：Vmess运营商的角色、选择策略与科学上网的未来</a></li>
+                        <li class="py-2"><a href="/news/article-94616.htm" title="V2Ray 500错误详解与高效解决方案：全面排查与应对技巧">V2Ray 500错误详解与高效解决方案：全面排查与应对技巧</a></li>
+                        <li class="py-2"><a href="/news/article-99004.htm" title="V2Ray网速显示全攻略：从安装配置到实时监控的深度解析">V2Ray网速显示全攻略：从安装配置到实时监控的深度解析</a></li>
+                        <li class="py-2"><a href="/news/article-107715.htm" title="Shadowrocket完全配置指南：iOS上科学上网的终极利器">Shadowrocket完全配置指南：iOS上科学上网的终极利器</a></li>
+                        <li class="py-2"><a href="/news/article-102782.htm" title="全面指南：如何购买Clash节点机场并高效使用">全面指南：如何购买Clash节点机场并高效使用</a></li>
+                        <li class="py-2"><a href="/news/article-103583.htm" title="深度解析：如何使用Shadowrocket与VPN结合提升网络安全与隐私保护">深度解析：如何使用Shadowrocket与VPN结合提升网络安全与隐私保护</a></li>
+                        <li class="py-2"><a href="/news/article-96116.htm" title="自己动手科学上网：快速掌握翻墙技巧与方法">自己动手科学上网：快速掌握翻墙技巧与方法</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">42</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="footer-area">
+        <div class="footer-bottom black-bg-2 pb-25 pt-25">
+            <div class="container">
+                <div class="copyright text-center">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <p>
+                        <a href="/">V2ray机场节点 中文网</a> 版权所有 Powered by WordPress
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- all js here -->
+    <script src="/assets/website/js/frontend/clashxw/vendor/jquery-1.12.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxw/popper.js"></script>
+    <script src="/assets/website/js/frontend/clashxw/bootstrap.min.js"></script>
+    <script src="/assets/website/js/frontend/clashxw/ajax-mail.js"></script>
+    <script src="/assets/website/js/frontend/clashxw/plugins.js"></script>
+    <script src="/assets/website/js/frontend/clashxw/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
