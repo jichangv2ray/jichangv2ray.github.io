@@ -76,6 +76,7 @@
                             <nav>
                                 <ul>
                                                                         <li><a href="/">首页</a></li>
+                                                                        <li><a href="/free-nodes/">免费节点</a></li>
                                                                         <li><a href="/paid-subscribe/">推荐机场</a></li>
                                                                         <li><a href="/news/">新闻资讯</a></li>
                                                                         <li><a href="/client.htm">客户端</a></li>
@@ -89,6 +90,7 @@
                         <nav id="mobile-menu-active">
                             <ul class="menu-overflow">
                                                                 <li><a href="/">首页</a></li>
+                                                                <li><a href="/free-nodes/">免费节点</a></li>
                                                                 <li><a href="/paid-subscribe/">推荐机场</a></li>
                                                                 <li><a href="/news/">新闻资讯</a></li>
                                                                 <li><a href="/client.htm">客户端</a></li>
@@ -121,7 +123,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
                 <div class="xcblog-blog-detail xcblog-blog-detail-defined">
                       <p>在信息高速流通的数字化时代，网络安全与隐私保护已成为每个互联网用户的刚需。肥猫云Clash作为一款基于Clash核心开发的网络代理工具，凭借其出色的多协议支持、智能分流机制和强大的隐私保护功能，正迅速成为广大用户优化网络体验的首选方案。本文将深入解析肥猫云Clash的各项功能，并提供从安装到配置的完整教程，助您轻松掌握这一利器。</p>  <h2>一、工具核心价值与功能特性</h2>  <p>肥猫云Clash本质上是一个集成了多种代理协议的网络流量管理工具，其设计理念是在保证安全性的前提下，为用户提供灵活高效的网络访问解决方案。与传统的VPN工具相比，它不仅具备更精细的流量控制能力，还支持基于规则的分流策略，让用户可以根据不同使用场景自由定制网络行为。</p>  <p>该工具的核心优势体现在三个维度：首先是协议支持的多样性，包括主流的VMess、Shadowsocks、Trojan、HTTP等协议，确保用户能够兼容各种服务器环境；其次是智能分流系统，通过内置的规则集自动识别访问目标，将流量分配给最优线路；最后是隐私保护机制，采用端到端加密技术，有效防止数据泄露和网络监控。</p>  <p>特别值得一提的是其用户界面设计。相较于命令行操作的原版Clash，肥猫云Clash提供了直观的图形化界面，大大降低了使用门槛。即使是不熟悉网络技术的普通用户，也能通过简单点击完成复杂配置。</p>  <h2>二、多平台安装详细教程</h2>  <h3>Windows系统安装</h3>  <ol> <li>访问肥猫云Clash官方网站下载页面，选择最新版本的Windows安装包（通常为.exe格式）</li> <li>下载完成后双击安装文件，按照向导提示完成安装过程</li> <li>首次启动时，系统可能会提示网络访问权限，需点击"允许访问"</li> <li>安装完成后建议创建桌面快捷方式，方便日常使用</li> </ol>  <h3>macOS系统部署</h3>  <ol> <li>在官网下载专区获取.dmg格式的Mac版本安装包</li> <li>打开下载文件后将应用程序图标拖拽至Applications文件夹</li> <li>在系统偏好设置-安全性与隐私中授权运行该应用</li> <li>建议在Dock栏保留图标，便于快速启动</li> </ol>  <h3>Linux系统安装</h3>  <p>对于Debian/Ubuntu系系统： <code>bash wget -O /tmp/feimaoclash.deb [最新版本下载链接] sudo dpkg -i /tmp/feimaoclash.deb sudo apt-get install -f</code> 对于RHEL/CentOS系统： <code>bash sudo yum install [包名称] 或 sudo dnf install [包名称]</code> 安装完成后可通过终端命令启动，也可添加到系统自启动项。</p>  <h2>三、配置详解与优化策略</h2>  <h3>基础配置步骤</h3>  <p>首次启动程序后，用户需要完成以下基础配置： 1. 在"配置文件"页面点击"新建配置"，选择"在线配置"或"本地配置" 2. 填入订阅链接（通常由服务提供商提供）或手动输入服务器信息 3. 设置系统代理模式（全局/规则/直连） 4. 测试连接速度并选择最优节点</p>  <h3>高级功能配置</h3>  <p>规则配置是发挥Clash威力的关键环节： 1. 分流规则：通过编辑Rule列表，可以指定特定域名或IP段使用代理或直连    - 例如：将视频流量指向高速节点，工作流量指向稳定节点    - 支持GeoIP数据库自动分流境外流量</p>  <ol> <li><p>策略组管理：创建自定义策略组实现负载均衡</p>  <ul> <li>设置故障转移策略，在主节点失效时自动切换</li> <li>配置延迟测试，自动选择响应最快的节点</li> </ul></li> <li><p>脚本功能：利用JavaScript编写自动化脚本</p>  <ul> <li>实现定时切换节点</li> <li>根据网络状况自动调整策略</li> </ul></li> </ol>  <h3>隐私增强设置</h3>  <ol> <li>开启"真实IP隐藏"功能，防止DNS泄漏</li> <li>配置防火墙规则，阻断非代理连接</li> <li>设置自动更新GeoIP数据库，确保分流准确性</li> <li>启用流量混淆功能，对抗深度包检测</li> </ol>  <h2>四、实战应用场景解析</h2>  <h3>场景一：学术研究</h3>  <p>研究人员需要访问国际学术资源时，可通过配置： - 将Google Scholar、IEEE等学术站点设置为代理 - 国内数据库和校园网资源保持直连 - 设置工作时段自动启用，休息时段自动关闭</p>  <h3>场景二：跨境商务</h3>  <p>外贸企业用户可配置： - 将客户管理系统和海外电商平台流量指向专用线路 - 财务系统使用加密强度最高的协议 - 设置多节点负载均衡，确保业务连续性</p>  <h3>场景三：媒体消费</h3>  <p>视频爱好者可以： - 为不同视频平台指定专属节点 - 设置4K流量优先策略 - 配置闲时预加载功能</p>  <h2>五、故障排除与性能优化</h2>  <h3>常见问题解决方案</h3>  <ol> <li><p>连接失败排查：</p>  <ul> <li>检查订阅链接是否有效</li> <li>验证系统时间是否正确（证书验证依赖准确时间）</li> <li>尝试更换协议类型（如从VMess切换至Trojan）</li> </ul></li> <li><p>速度缓慢优化：</p>  <ul> <li>启用延迟测试功能自动选择最优节点</li> <li>调整MTU值优化TCP传输效率</li> <li>开启BBR拥塞控制算法</li> </ul></li> <li><p>资源占用过高：</p>  <ul> <li>减少同时活跃节点数量</li> <li>调整流量检测频率</li> <li>禁用非必要的地理位置查询功能</li> </ul></li> </ol>  <h3>高级调试技巧</h3>  <ol> <li>使用内置流量分析器识别异常连接</li> <li>开启详细日志记录定位问题根源</li> <li>利用API接口与其他安全工具集成</li> </ol>  <h2>六、安全使用建议</h2>  <ol> <li>来源验证：仅从官方渠道获取安装包和配置文件</li> <li>权限管理：按照最小权限原则设置应用访问权限</li> <li>定期更新：保持客户端和规则库处于最新状态</li> <li>备份策略：定期导出配置文件备份到安全位置</li> <li>监控告警：设置异常流量告警机制</li> </ol>  <h2>七、生态扩展与进阶玩法</h2>  <p>肥猫云Clash的强大之处还体现在其丰富的扩展生态： 1. 规则订阅：订阅第三方维护的规则集，自动更新分流规则 2. 脚本市场：获取社区开发的实用脚本，增强功能 3. API集成：与HomeAssistant等智能家居系统联动 4. 集群管理：通过控制面板统一管理多设备配置</p>  <h2>专业点评</h2>  <p>肥猫云Clash代表了现代网络代理工具的发展方向——在保持技术先进性的同时，不断降低使用门槛。其设计哲学体现了"复杂留给自己，简单留给用户"的理念，将原本需要专业知识的网络代理配置，转化为可视化的操作界面。</p>  <p>从技术架构角度看，该工具成功实现了三个平衡：首先是功能丰富性与易用性的平衡，既满足了高级用户的定制需求，又照顾了普通用户的即开即用体验；其次是性能与资源消耗的平衡，采用高效的流量处理算法，在提供强大功能的同时保持较低的系统资源占用；最后是开放性与安全性的平衡，既支持丰富的扩展功能，又通过严格的验证机制保障系统安全。</p>  <p>特别值得称赞的是其规则系统的设计，采用类自然语言的规则语法，让用户可以用近似日常表达的方式定义网络行为。这种设计大大降低了配置门槛，使得非技术人员也能轻松实现复杂的网络策略。</p>  <p>然而需要注意的是，工具本身只是中间件，实际体验很大程度上取决于服务器质量。建议用户选择信誉良好的服务提供商，并定期更新节点信息。同时要认识到，没有任何工具能提供绝对的安全，保持警惕性和良好的网络使用习惯同样重要。</p>  <p>总体而言，肥猫云Clash是一款设计精良、功能全面的网络优化工具，无论是为了学术研究、商务应用还是日常娱乐，都能提供出色的解决方案。随着后续版本的持续迭代，相信它会成为更多用户数字生活中不可或缺的基础工具。</p>                 </div>
                 <div class="clearfix"></div>
@@ -137,16 +139,16 @@
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/news/article-133691.htm" title="深度解析：为何使用V2Ray后无法访问谷歌及全方位解决方案">深度解析：为何使用V2Ray后无法访问谷歌及全方位解决方案</a></li>
-                        <li class="py-2"><a href="/news/article-151111.htm" title="星际争锋：从虚拟战场到未来宇宙的战略博弈">星际争锋：从虚拟战场到未来宇宙的战略博弈</a></li>
-                        <li class="py-2"><a href="/news/article-132346.htm" title="云端解析与加密代理的完美联姻：CloudXNS与V2Ray深度整合指南">云端解析与加密代理的完美联姻：CloudXNS与V2Ray深度整合指南</a></li>
-                        <li class="py-2"><a href="/news/article-148694.htm" title="跨越数字边界：科学上网后探索全球网络资源的无限可能">跨越数字边界：科学上网后探索全球网络资源的无限可能</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-9-share-vpn.htm" title="专业VPN机场 | 8月9日20.4M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场">专业VPN机场 | 8月9日20.4M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场</a></li>
-                        <li class="py-2"><a href="/news/article-134670.htm" title="全局代理科学上网：解锁数字世界的通行证">全局代理科学上网：解锁数字世界的通行证</a></li>
-                        <li class="py-2"><a href="/news/article-136631.htm" title="突破流量限制：v2rayNG云免流完全指南与深度解析">突破流量限制：v2rayNG云免流完全指南与深度解析</a></li>
-                        <li class="py-2"><a href="/news/article-149405.htm" title="Quantumult好用吗？全面评析与使用指南">Quantumult好用吗？全面评析与使用指南</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-10-node-share.htm" title="专业VPN机场 | 8月10日21.4M/S|免费Shadowrocket/SSR/V2ray/Clash订阅机场">专业VPN机场 | 8月10日21.4M/S|免费Shadowrocket/SSR/V2ray/Clash订阅机场</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-6-vpn-free.htm" title="专业VPN机场 | 8月6日20M/S|免费SSR/Clash/V2ray/Shadowrocket订阅机场">专业VPN机场 | 8月6日20M/S|免费SSR/Clash/V2ray/Shadowrocket订阅机场</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-18-shadowrocket-node.htm" title="V2ray机场节点 | 9月18日19.2M/S|免费V2ray节点/SSR/Clash节点/Shadowrocket订阅节点">V2ray机场节点 | 9月18日19.2M/S|免费V2ray节点/SSR/Clash节点/Shadowrocket订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-12-node-share-links.htm" title="专业VPN机场 | 8月12日21.9M/S|免费Clash节点/SSR/Shadowrocket节点/V2ray订阅机场">专业VPN机场 | 8月12日21.9M/S|免费Clash节点/SSR/Shadowrocket节点/V2ray订阅机场</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-10-node-share.htm" title="专业VPN机场 | 8月10日21.4M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash订阅机场">专业VPN机场 | 8月10日21.4M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash订阅机场</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-21-clash-v2ray-ss-ssr.htm" title="V2ray机场节点 | 9月21日18.7M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket订阅节点">V2ray机场节点 | 9月21日18.7M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-15-free-v2ray.htm" title="V2ray机场节点 | 9月15日22.9M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR订阅节点">V2ray机场节点 | 9月15日22.9M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR订阅节点</a></li>
+                        <li class="py-2"><a href="/news/article-155128.htm" title="用好VPS，打牢自由的基石：一部关于科学上网与安全配置的完全指南">用好VPS，打牢自由的基石：一部关于科学上网与安全配置的完全指南</a></li>
+                        <li class="py-2"><a href="/news/article-151492.htm" title="V2Ray节点频繁断连？深度解析与终极解决方案">V2Ray节点频繁断连？深度解析与终极解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-148397.htm" title="安卓设备上轻松配置Vmess节点：从入门到精通的完整指南">安卓设备上轻松配置Vmess节点：从入门到精通的完整指南</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-19-shadowrocket-node.htm" title="V2ray机场节点 | 9月19日20.8M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash订阅节点">V2ray机场节点 | 9月19日20.8M/S|免费Shadowrocket节点/SSR/V2ray节点/Clash订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-14-free-vpn-node.htm" title="专业VPN机场 | 8月14日20.6M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅机场">专业VPN机场 | 8月14日20.6M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray订阅机场</a></li>
                     </ul>
     </div>
 </div>
@@ -158,13 +160,10 @@
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-07/" title="2025-07 归档">2025-07</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
             </li>
                     </ul>
     </div>
@@ -178,8 +177,10 @@
         <div class="footer-bottom black-bg-2 pb-25 pt-25">
             <div class="container">
                 <div class="copyright text-center">
-                                        <p>
+                                        <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
                                                 <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
                                                 <a href="/paid-subscribe/">推荐机场</a> |
                                                 <a href="/news/">新闻资讯</a> |
                                                 <a href="/client.htm">客户端</a> |
@@ -188,7 +189,7 @@
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                    <p>
+                                        <p>
                         <a href="/">V2ray机场节点 中文网</a> 版权所有 Powered by WordPress
                     </p>
                 </div>
