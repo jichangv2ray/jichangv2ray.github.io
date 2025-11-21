@@ -382,9 +382,9 @@ opkg install luci-app-passwall
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 的节点导入方式有哪些？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
     <div class="panel-body">
-        Potatso Lite 支持通过手动添加节点信息或扫描二维码导入节点。虽然不支持自动订阅更新，但对轻量用户来说，手动方式足够使用，方便在 iOS 设备上管理节点。<hr />    </div>
+        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 的主要用途是什么？</h5></div>
@@ -392,24 +392,9 @@ opkg install luci-app-passwall
         Hiddify Next 是 Hiddify 系列的新版本，集成了 VLESS、Trojan、Reality 等新型协议支持。它为用户提供一站式代理配置与分享功能，适合初学者快速上手使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的规则代理与全局代理如何选择？</h5></div>
+    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
     <div class="panel-body">
-        全局代理会将所有流量通过节点转发，而规则代理只针对指定 IP、端口或应用。用户可根据需求选择，以优化带宽利用和流量分流，确保不同应用的最佳体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 混淆方式如何提高抗封锁能力？</h5></div>
-    <div class="panel-body">
-        SSR 混淆可将流量伪装成正常 HTTPS 或 HTTP 数据，降低被 DPI 检测风险。合理选择协议和混淆参数组合，可以提高节点稳定性和长期可用性，保证科学上网体验顺畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何支持视频加速？</h5></div>
-    <div class="panel-body">
-        通过分流规则，将流媒体域名匹配到高速节点，其他网站走普通节点。这样可以保证视频播放流畅，同时节约带宽资源，提高整体网络效率和体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
-    <div class="panel-body">
-        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提高访问速度和连接稳定性，保证用户体验流畅。<hr />    </div>
+        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 支持节点订阅的自动更新吗？</h5></div>
@@ -417,19 +402,34 @@ opkg install luci-app-passwall
         支持。用户可通过订阅 URL 批量更新节点，程序会自动下载并替换旧节点。定期自动更新可保证节点列表始终有效，减少手动维护的工作量，提高使用效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 混淆方式如何提高抗封锁能力？</h5></div>
+    <div class="panel-body">
+        SSR 混淆可将流量伪装成正常 HTTPS 或 HTTP 数据，降低被 DPI 检测风险。合理选择协议和混淆参数组合，可以提高节点稳定性和长期可用性，保证科学上网体验顺畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
     <div class="panel-body">
         支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何为不同用户设置流量限制？</h5></div>
+    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
     <div class="panel-body">
-        管理员可为每个用户设置独立带宽限制和流量配额。超过限制时，可自动降速或阻止访问，确保服务器资源合理分配，避免单用户占用过多带宽，提升整体网络效率和公平性。<hr />    </div>
+        XTLS 模式减少握手次数和加密开销，适合高延迟或不稳定移动网络。结合策略组和多出口节点，可提高访问速度和连接稳定性，保证用户体验流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用对短连接有何优势？</h5></div>
+    <div class="panel-heading"><h5>Potatso Lite 的节点导入方式有哪些？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接应用，如游戏和即时通讯，可提高吞吐量和连接稳定性，优化网络体验。    </div>
+        Potatso Lite 支持通过手动添加节点信息或扫描二维码导入节点。虽然不支持自动订阅更新，但对轻量用户来说，手动方式足够使用，方便在 iOS 设备上管理节点。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的分流规则如何支持视频加速？</h5></div>
+    <div class="panel-body">
+        通过分流规则，将流媒体域名匹配到高速节点，其他网站走普通节点。这样可以保证视频播放流畅，同时节约带宽资源，提高整体网络效率和体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的规则代理与全局代理如何选择？</h5></div>
+    <div class="panel-body">
+        全局代理会将所有流量通过节点转发，而规则代理只针对指定 IP、端口或应用。用户可根据需求选择，以优化带宽利用和流量分流，确保不同应用的最佳体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -458,16 +458,16 @@ opkg install luci-app-passwall
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-11-free-ssr-subscribe.htm" title="V2ray机场节点 | 11月11日21M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点">V2ray机场节点 | 11月11日21M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-27-free-node-subscribe.htm" title="V2ray机场节点 | 10月27日21.7M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点">V2ray机场节点 | 10月27日21.7M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-7-free-clash-subscribe.htm" title="V2ray机场节点 | 10月7日18.8M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点">V2ray机场节点 | 10月7日18.8M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-9-free-node-subscribe.htm" title="V2ray机场节点 | 10月9日18.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅节点">V2ray机场节点 | 10月9日18.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/Singbox节点/SSR节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-17-free-subscribe-node.htm" title="V2ray机场节点 | 11月17日21.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点">V2ray机场节点 | 11月17日21.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-2-free-node-subscribe.htm" title="V2ray机场节点 | 11月2日21.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点">V2ray机场节点 | 11月2日21.9M/S|免费Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-6-free-v2ray-subscribe.htm" title="V2ray机场节点 | 10月6日21.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅节点">V2ray机场节点 | 10月6日21.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-8-free-clash.htm" title="V2ray机场节点 | 10月8日18.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点">V2ray机场节点 | 10月8日18.3M/S|免费Shadowrocket节点/Singbox节点/Clash节点/SSR节点/V2ray节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-20-free-node-subscribe.htm" title="V2ray机场节点 | 11月20日19.8M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点">V2ray机场节点 | 11月20日19.8M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-12-free-shadowrocket-node.htm" title="V2ray机场节点 | 10月12日19.7M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点订阅节点">V2ray机场节点 | 10月12日19.7M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-8-free-clash.htm" title="V2ray机场节点 | 11月8日22.6M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点">V2ray机场节点 | 11月8日22.6M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-3-clash-node-daily-updates.htm" title="V2ray机场节点 | 11月3日22.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点">V2ray机场节点 | 11月3日22.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Clash节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-5-clash-node.htm" title="V2ray机场节点 | 10月5日18.3M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点">V2ray机场节点 | 10月5日18.3M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-26-free-node-subscribe.htm" title="V2ray机场节点 | 10月26日19.1M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点">V2ray机场节点 | 10月26日19.1M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-9-free-shadowrocket-node.htm" title="V2ray机场节点 | 11月9日19.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点">V2ray机场节点 | 11月9日19.2M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-10-node-share-links.htm" title="V2ray机场节点 | 10月10日18.5M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点">V2ray机场节点 | 10月10日18.5M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-10-clash-windows.htm" title="V2ray机场节点 | 11月10日21.5M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点订阅节点">V2ray机场节点 | 11月10日21.5M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-11-free-node-subscribe.htm" title="V2ray机场节点 | 10月11日19M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅节点">V2ray机场节点 | 10月11日19M/S|免费SSR节点/Shadowrocket节点/Clash节点/V2ray节点/Singbox节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-14-free-node-subscribe-links.htm" title="V2ray机场节点 | 10月14日21.1M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点订阅节点">V2ray机场节点 | 10月14日21.1M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点订阅节点</a></li>
                     </ul>
     </div>
 </div>
@@ -479,7 +479,7 @@ opkg install luci-app-passwall
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
