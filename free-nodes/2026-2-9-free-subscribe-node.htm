@@ -305,6 +305,7 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-2-8-free-ssr-node.htm">V2ray机场节点 | 2月8日19.5M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点</a></p>
+        <p>下一个：<a href="/free-nodes/2026-2-10-free-subscribe-node.htm">V2ray机场节点 | 2月10日22.2M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
@@ -313,19 +314,9 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
         WebSocket + TLS 可将 V2Ray 流量伪装成 HTTPS 请求，隐藏真实通信特征。结合域名伪装和策略组使用，可以有效绕过封锁，提高节点安全性和连接稳定性，保持长期稳定访问。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 如何使用分流策略实现广告屏蔽？</h5></div>
+    <div class="panel-heading"><h5>Clash 如何通过规则文件优化流量分配？</h5></div>
     <div class="panel-body">
-        QuantumultX 可通过规则匹配广告域名或路径，将请求重定向或直接阻断。结合策略组，可实现自动屏蔽网页和应用广告，提高用户浏览体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
-    <div class="panel-body">
-        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 的自动测速功能如何设置？</h5></div>
-    <div class="panel-body">
-        Clash 支持定期测速节点延迟，用户可以设置测速频率和超时时间。测速结果会影响策略组的节点选择，从而自动切换至最优节点，提高访问速度和连接稳定性。<hr />    </div>
+        Clash 支持自定义规则文件，可根据域名、IP 或应用类型分流流量。结合策略组使用，可自动将视频、游戏、浏览器等流量分配到最优节点，提高访问速度和网络稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 伪装域名如何选择以提升隐蔽性？</h5></div>
@@ -333,19 +324,9 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
         伪装域名应选择真实可访问网站并配备有效证书，这样 Trojan 流量可模拟正常 HTTPS 请求，降低被封锁和检测的风险，提高节点长期可用性和访问稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何通过规则文件优化流量分配？</h5></div>
-    <div class="panel-body">
-        Clash 支持自定义规则文件，可根据域名、IP 或应用类型分流流量。结合策略组使用，可自动将视频、游戏、浏览器等流量分配到最优节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Mihomo 是什么？</h5></div>
     <div class="panel-body">
         Mihomo 是 Clash Premium 的开源替代项目，兼容原版 Clash 配置文件并扩展了部分新功能。它性能优异、内存占用低，适用于希望自定义构建代理环境的高级用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 如何启用 TUN 模式？</h5></div>
-    <div class="panel-body">
-        在 Mihomo 的配置文件中启用 `tun:` 模块并安装系统驱动即可实现全局代理。TUN 模式可将所有系统流量导向代理核心，实现真正意义上的全局加速。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 的伪装域名如何选择更安全？</h5></div>
@@ -353,9 +334,29 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
         伪装域名应选择真实可访问的网站，且证书有效。这样 Trojan 流量能伪装成正常 HTTPS 请求，减少被封锁或检测的风险，提高节点安全性和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 如何使用分流策略实现广告屏蔽？</h5></div>
+    <div class="panel-body">
+        QuantumultX 可通过规则匹配广告域名或路径，将请求重定向或直接阻断。结合策略组，可实现自动屏蔽网页和应用广告，提高用户浏览体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 如何启用 TUN 模式？</h5></div>
+    <div class="panel-body">
+        在 Mihomo 的配置文件中启用 `tun:` 模块并安装系统驱动即可实现全局代理。TUN 模式可将所有系统流量导向代理核心，实现真正意义上的全局加速。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 的自动测速功能如何设置？</h5></div>
+    <div class="panel-body">
+        Clash 支持定期测速节点延迟，用户可以设置测速频率和超时时间。测速结果会影响策略组的节点选择，从而自动切换至最优节点，提高访问速度和连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的节点测速结果如何应用？</h5></div>
     <div class="panel-body">
-        节点测速结果可用于策略组选择和自动切换，程序会根据延迟和丢包率选择最优节点。这样访问海外网站或流媒体时，可以保持高速和稳定的网络体验。    </div>
+        节点测速结果可用于策略组选择和自动切换，程序会根据延迟和丢包率选择最优节点。这样访问海外网站或流媒体时，可以保持高速和稳定的网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>QuantumultX 的广告屏蔽原理是什么？</h5></div>
+    <div class="panel-body">
+        QuantumultX 使用分流规则与脚本结合的方式实现广告屏蔽。通过重写 HTTP 请求和阻止特定域名，它能有效去除 App 内广告或网页弹窗，提升浏览体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -384,16 +385,16 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2026-2-12-free-v2ray.htm" title="V2ray机场节点 | 2月12日21.1M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点">V2ray机场节点 | 2月12日21.1M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-30-clash-v2ray-ss-ssr.htm" title="V2ray机场节点 | 1月30日19M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点">V2ray机场节点 | 1月30日19M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-3-free-node-subscribe-links.htm" title="V2ray机场节点 | 2月3日22M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点">V2ray机场节点 | 2月3日22M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-31-clash-v2ray-ss-ssr.htm" title="V2ray机场节点 | 1月31日18.4M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Singbox节点订阅节点">V2ray机场节点 | 1月31日18.4M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/V2ray节点/Singbox节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-1-clash-windows.htm" title="V2ray机场节点 | 2月1日20M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点订阅节点">V2ray机场节点 | 2月1日20M/S|免费SSR节点/Trojan节点/Shadowrocket节点/Singbox节点/V2ray节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-1-16-free-v2ray-subscribe.htm" title="V2ray机场节点 | 1月16日18.7M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点">V2ray机场节点 | 1月16日18.7M/S|免费Clash节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-1-19-node-share-links.htm" title="V2ray机场节点 | 1月19日22M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点">V2ray机场节点 | 1月19日22M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-2-7-free-clash-subscribe.htm" title="V2ray机场节点 | 2月7日22.6M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点">V2ray机场节点 | 2月7日22.6M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-2-14-free-clash-subscribe.htm" title="V2ray机场节点 | 2月14日19.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点">V2ray机场节点 | 2月14日19.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-1-26-free-clash.htm" title="V2ray机场节点 | 1月26日20.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点">V2ray机场节点 | 1月26日20.3M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Trojan节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-17-free-v2ray.htm" title="V2ray机场节点 | 1月17日22.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅节点">V2ray机场节点 | 1月17日22.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-22-node-share-links.htm" title="V2ray机场节点 | 1月22日21.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点">V2ray机场节点 | 1月22日21.5M/S|免费SSR节点/Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-29-clash-windows.htm" title="V2ray机场节点 | 1月29日22.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅节点">V2ray机场节点 | 1月29日22.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-2-4-free-node-subscribe.htm" title="V2ray机场节点 | 2月4日20.5M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点订阅节点">V2ray机场节点 | 2月4日20.5M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR节点/Singbox节点/Trojan节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-6-free-v2ray.htm" title="V2ray机场节点 | 1月6日21.7M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点">V2ray机场节点 | 1月6日21.7M/S|免费Clash节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-9-free-node-subscribe.htm" title="V2ray机场节点 | 1月9日21.6M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点">V2ray机场节点 | 1月9日21.6M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-1-8-free-ssr-subscribe.htm" title="V2ray机场节点 | 1月8日19.7M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点">V2ray机场节点 | 1月8日19.7M/S|免费SSR节点/Singbox节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点</a></li>
                     </ul>
     </div>
 </div>
@@ -405,10 +406,10 @@ sudo apt-get install -f   </span><span><span class="hljs-comment"># 修复依赖
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">9</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
+                <h4><span class="badge" style="float: right;">16</span> <a href="/date/2026-02/" title="2026-02 归档">2026-02</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-01/" title="2026-01 归档">2026-01</a></h4>
+                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-01/" title="2026-01 归档">2026-01</a></h4>
             </li>
                     </ul>
     </div>
